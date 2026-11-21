@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="page">
+
+
+<div class="page-header">
+    <span>TRANSACTIONS</span>
+    <h1>Income & Expenses</h1>
+    <p>Manage your financial transactions and categories.</p>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Total Income</h3>
+        <h2>₹70,000</h2>
+        <p>This month</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Expenses</h3>
+        <h2>₹20,000</h2>
+        <p>This month</p>
+    </div>
+
+    <div class="card">
+        <h3>Categories</h3>
+        <h2>8</h2>
+        <p>Active categories</p>
+    </div>
+
+</div>
+
+<div class="card">
+    <h2>Recent Transactions</h2>
+
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Amount</th>
+        </tr>
+
+        <tr>
+            <td>Monthly Salary</td>
+            <td>Salary</td>
+            <td>Income</td>
+            <td>₹50,000</td>
+        </tr>
+
+        <tr>
+            <td>Grocery Shopping</td>
+            <td>Food</td>
+            <td>Expense</td>
+            <td>₹5,000</td>
+        </tr>
+
+        <tr>
+            <td>Internet Bill</td>
+            <td>Bills</td>
+            <td>Expense</td>
+            <td>₹1,200</td>
+        </tr>
+    </table>
+</div>
+
+
+</section>
+
+{% endblock %}

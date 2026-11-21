@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero">
+    <span>PERSONAL FINANCE PLANNER</span>
+
+    <h1>
+        Plan Your Money.<br>
+        Build Your Future.
+    </h1>
+
+    <p>
+        BudgetPilot helps you track income, manage expenses,
+        create budgets and achieve your savings goals in one simple place.
+    </p>
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'dashboard' %}" class="btn">
+            Go to Dashboard
+        </a>
+    {% else %}
+        <a href="{% url 'register' %}" class="btn">
+            Get Started
+        </a>
+
+        <a href="{% url 'login' %}" class="btn">
+            Login
+        </a>
+    {% endif %}
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Track Income</h3>
+        <p>
+            Keep your income organized and understand
+            how much money you receive each month.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Manage Expenses</h3>
+        <p>
+            Record your daily expenses and understand
+            where your money is being spent.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Set Savings Goals</h3>
+        <p>
+            Create personal savings goals and monitor
+            your progress over time.
+        </p>
+    </div>
+
+</section>
+
+{% endblock %}
